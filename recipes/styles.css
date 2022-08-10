@@ -1,7 +1,96 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: #000;
   color: #fff;
   font-family: "Roboto", sans-serif;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+li {
+  list-style-type: none;
+}
+a,
+a:visited {
+  color: #fff;
+}
+
+/* MAIN */
+.window {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  min-height: 100vh;
+}
+
+/* RECIPE */
+.container {
+  line-height: 1.3;
+  padding: 20px 50px;
+}
+.container h1 {
+  font-weight: bolder;
+}
+.container img {
+  width: 65%;
+  padding: 20px;
+}
+.container p,
+.container ul {
+  padding: 10px;
+}
+
+/* CIGAR PAIRING */
+.pair {
+  width: 45%;
+  line-height: 1.3;
+  padding: 20px 50px;
+  font-size: 0.9rem;
+}
+.pair h1 {
+  margin-bottom: 10px;
+}
+.pair img {
+  width: 80%;
+  margin-top: 20px;
+}
+
+/* BUTTON */
+.btn {
+  text-align: center;
+  margin: 25px;
+  bottom: 0;
+}
+
+.btn button {
+  border-radius: 10px;
+  padding: 10px 30px;
+  background-color: #333;
+}
+.btn button:hover {
+  background-color: rgba(51, 51, 51, 0.6);
+}
+
+/* SMALLER SCREENS */
+@media (max-width: 768px) {
+  .window {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container,
+  .pair {
+    width: 100%;
+  }
+  .pair img {
+    max-width: 35%;
+  }
 }
