@@ -10,17 +10,20 @@ html {
   background-color: rgb(10, 10, 10);
 }
 .container {
-  max-width: 1100px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 a {
   color: #fff;
   font-weight: bold;
+  text-decoration: none;
 }
 a:hover {
   color: rgba(255, 255, 255, 0.85);
 }
-
+img {
+  display: block;
+}
 /* HEADER SECTION */
 .headerLogo {
   background-color: #000;
@@ -33,9 +36,12 @@ a:hover {
 
 /* Hero Section */
 .hero {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: auto;
   background-color: #000;
+  box-shadow: 0px 0px 3px #333;
 }
 .hero h1 {
   text-shadow: 5px 5px 5px #333;
@@ -54,37 +60,49 @@ a:hover {
   margin: 0px 10px;
 }
 .hero img {
-  width: 100%;
-  height: auto;
-}
-
-img {
-  width: 700px;
-  height: auto;
-}
-.drinks {
-  margin: 50px;
-  /* margin-bottom: 30px; */
+  width: 70%;
+  margin: 0 auto;
 }
 
 /* DRINKS */
-.container .drinks {
+.drinks {
+  box-shadow: 1px 1px 5px #fff;
+  height: 3px;
   border: 2px solid #333;
+  margin: 50px auto;
+  /* width: 50%; */
 }
-
-figure {
-  border: 1px solid rgb(14, 193, 14);
-  display: flex;
-  justify-content: center;
+.cocktail {
+  width: 50%;
+  margin: 0 auto;
   padding: 10px;
   box-shadow: 0px 0px 10px #333;
 }
-figure img {
-  width: 700;
-  height: 466;
+.cocktail img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  object-position: center;
+  margin: 0 auto;
 }
 figcaption {
   text-align: center;
-  padding: 10px;
-  font-size: 200%;
+  padding-top: 10px;
+  font-size: 125%;
+  text-decoration: none;
+}
+
+/* BUTTON */
+.btn {
+  text-align: center;
+  margin: 25px;
+}
+
+.btn button {
+  border-radius: 10px;
+  padding: 10px 30px;
+  background-color: #333;
+}
+.btn button:hover {
+  background-color: rgba(51, 51, 51, 0.6);
 }
